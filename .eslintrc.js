@@ -29,8 +29,9 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
+    'react/require-default-props': 'off',
     'no-console': 'off',
-    'react/jsx-filename-extension': ['warn', { extensions: ['.tsx'] }],
+    'react/jsx-filename-extension': ['error', { extensions: ['.ts', '.tsx'] }],
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -43,6 +44,9 @@ module.exports = {
   settings: {
     'import/resolver': {
       typescript: {},
+      node: {
+        extensions: ['.ts', '.tsx'],
+      },
     },
   },
 };

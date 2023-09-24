@@ -1,0 +1,10 @@
+export { ReactComponent as calendar } from './calendar.svg';
+export { ReactComponent as down } from './chevron-down.svg';
+export { ReactComponent as left } from './chevron-left.svg';
+export { ReactComponent as rigth } from './chevron-right.svg';
+export { ReactComponent as close } from './close.svg';
+export { ReactComponent as edit } from './edit.svg';
+export { ReactComponent as menu } from './menu.svg';
+export { ReactComponent as plus } from './plus-circle.svg';
+export { ReactComponent as setting } from './setting.svg';
+export { ReactComponent as star } from './star.svg';
