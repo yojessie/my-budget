@@ -18,5 +18,10 @@
     "jsx": "react-jsx",
     "typeRoots": ["./node_modules/@types", "types"]
   },
-  "include": ["src", "src/components", "src/assets/avg/svg.d.ts"]
+  "include": [
+    "src",
+    "src/components",
+    "src/assets/avg/svg.d.ts",
+    "src/styles/styled.d.ts"
+  ]
 }
