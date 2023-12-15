@@ -1,14 +1,15 @@
 import React from 'react';
-import GlobalStyles from './styles/GlobalStyles.styles';
+import { ThemeProvider } from 'styled-components';
+import theme from 'styles/theme';
+import GlobalStyles from 'styles/GlobalStyles';
 import Gnb from './components/Gnb';
 
 function App() {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Gnb />
-      <h1>myBudget</h1>
-    </div>
+    </ThemeProvider>
   );
 }
 
