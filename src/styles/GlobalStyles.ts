@@ -11,22 +11,43 @@ const GlobalStyle = createGlobalStyle`
   }
   html, body {
     font-family: 'GmarketSansMedium', sans-serif;
-    font-size: ${({ theme }) => theme.fontSize.regular};
+    font-size: ${({ theme }) => theme.typo.regular};
     line-height: 1.4;
     color: ${({ theme }) => theme.color.black};
-    background: ${({ theme }) => theme.color.background};
+    background: #E6E9EE;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   ol, ul {
     list-style: none;
   }
   button {
+    font-family: 'GmarketSansMedium', sans-serif;
     border: none;
     outline: none;
+    background-color: inherit;
     cursor: pointer;
   }
   a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+  }
+  .screen {
+    width: 360px;
+    height: 740px;
+    background-color: ${({ theme }) => theme.color.background};
+    padding: 24px;
+    border-radius: 16px;
+  }
+  .name-tag {
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+    color: #A7B6C9;
   }
 `;
 

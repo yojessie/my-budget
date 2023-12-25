@@ -1,9 +1,18 @@
 import 'styled-components';
-import { colorTypes, fontSizeTypes } from './theme';
+import {
+  colorType,
+  typoType,
+  shadowType,
+  borderType,
+  radiusType,
+} from './theme';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
-    color: colorTypes;
-    fontSize: fontSizeTypes;
+    color: colorType;
+    typo: typoType;
+    shadow: shadowType;
+    border: borderType;
+    radius: radiusType;
   }
 }
